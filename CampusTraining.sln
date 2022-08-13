@@ -53,7 +53,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "RazorPag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "MvcMovie\MvcMovie\MvcMovie.csproj", "{94B1F1AA-970F-44A7-B2AB-F89171F83A2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBindingDemo", "ModelBindingDemo\ModelBindingDemo.csproj", "{737CD3C8-3296-4986-968C-02ED4EF800AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelBindingDemo", "ModelBindingDemo\ModelBindingDemo.csproj", "{737CD3C8-3296-4986-968C-02ED4EF800AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelValidationDemo", "ModelValidationDemo\ModelValidationDemo.csproj", "{F2D8D652-B92E-4667-BEE0-D07FE47FEA88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{737CD3C8-3296-4986-968C-02ED4EF800AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{737CD3C8-3296-4986-968C-02ED4EF800AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{737CD3C8-3296-4986-968C-02ED4EF800AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D8D652-B92E-4667-BEE0-D07FE47FEA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D8D652-B92E-4667-BEE0-D07FE47FEA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D8D652-B92E-4667-BEE0-D07FE47FEA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D8D652-B92E-4667-BEE0-D07FE47FEA88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

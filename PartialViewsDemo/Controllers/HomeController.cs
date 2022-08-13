@@ -13,11 +13,52 @@ namespace PartialViewsDemo.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public IActionResult Index(int id)
 
+        {
+
+            return View(new List<UserModel>()
+
+        {
+
+            new UserModel()
+
+            {
+
+                Id = 1,
+
+                Name = "John",
+
+                Email = "john@xxx.xxx",
+
+            },
+
+            new UserModel()
+
+            {
+
+                Id = 2,
+
+                Name = "Blackie",
+
+                Email = "blackie@xxx.xxx"
+
+            },
+
+            new UserModel()
+
+            {
+
+                Id = 3,
+
+                Name = "Claire",
+
+                Email = "claire@xxx.xxx"
+
+            }
+
+        });
+        }
         public IActionResult Privacy()
         {
             return View();

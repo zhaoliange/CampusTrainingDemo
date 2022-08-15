@@ -16,7 +16,15 @@ namespace MvcRoutingDemo.Controllers
         [Route("")]
         [Route("Home")]
         [Route("Home/Index")]
-        public IActionResult Index()
+        [Route("Home/Index/{id?}")]
+        public IActionResult Index(int? id)
+        {
+            return View();
+        }
+
+        [Route("Home/About")]
+        [Route("Home/About/{id?}")]
+        public IActionResult About(int? id)
         {
             return View();
         }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MvcRoutingDemo.Models;
 using System.Diagnostics;
+using Microsoft.Docs.Samples;
 
 namespace MvcRoutingDemo.Controllers
 {
@@ -19,14 +20,14 @@ namespace MvcRoutingDemo.Controllers
         [Route("Home/Index/{id?}")]
         public IActionResult Index(int? id)
         {
-            return View();
+            return ControllerContext.MyDisplayRouteInfo(id);
         }
 
         [Route("Home/About")]
         [Route("Home/About/{id?}")]
         public IActionResult About(int? id)
         {
-            return View();
+            return ControllerContext.MyDisplayRouteInfo(id);
         }
 
         public IActionResult Privacy()

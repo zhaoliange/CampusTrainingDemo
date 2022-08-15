@@ -13,6 +13,9 @@ namespace MvcRoutingDemo.Controllers
             _logger = logger;
         }
 
+        [Route("")]
+        [Route("Home")]
+        [Route("Home/Index")]
         public IActionResult Index()
         {
             return View();
@@ -28,5 +31,6 @@ namespace MvcRoutingDemo.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

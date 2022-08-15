@@ -4,17 +4,17 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Newtonsoft.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<TodoItemStore>();
-builder.Services.AddControllers();
 // Add services to the container.
+builder.Services.AddSingleton<TodoItemStore>();
+//builder.Services.AddControllers();
+
+builder.Services.AddControllers().AddXmlSerializerFormatters();
+
 /*
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
     options.SerializerSettings.ContractResolver = new DefaultContractResolver();
 });
-*/
-/*
-builder.Services.AddControllers().AddXmlSerializerFormatters();
 */
 /*
 builder.Services.AddControllers().AddJsonOptions(options =>

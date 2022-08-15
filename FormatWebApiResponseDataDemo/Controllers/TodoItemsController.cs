@@ -4,6 +4,8 @@ namespace FormatWebApiResponseDataDemo.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    //[FormatFilter]
+    //[Produces("application/json")]
     public class TodoItemsController : ControllerBase
     {
         private readonly TodoItemStore _todoItemStore;
@@ -15,6 +17,13 @@ namespace FormatWebApiResponseDataDemo.Controllers
 
         [HttpGet]
         public IActionResult Get()=> Ok(_todoItemStore.GetList());
+
+        [Produces("application/json")]
+        [HttpGet("GetList")]
+        public IEnumerable<TodoItem> GetTodoItems()
+        {
+            return _todoItemStore.GetList();
+        }
 
         [HttpGet("Version")]
         public ContentResult GetVersion()

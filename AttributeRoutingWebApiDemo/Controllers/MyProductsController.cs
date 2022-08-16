@@ -3,6 +3,8 @@ using Microsoft.Docs.Samples;
 
 namespace AttributeRoutingWebApiDemo.Controllers
 {
+    //two actions that match the same route template
+
     [ApiController]
     public class MyProductsController : ControllerBase
     {

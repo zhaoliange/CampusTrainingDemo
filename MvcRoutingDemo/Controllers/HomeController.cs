@@ -8,6 +8,7 @@ namespace MvcRoutingDemo.Controllers
     // Attribute routing
 
     //[Route("[controller]/[action]")]
+    //[Route("Home")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -32,7 +33,7 @@ namespace MvcRoutingDemo.Controllers
         {
             return ControllerContext.MyDisplayRouteInfo(id);
         }
-        
+
         /*
         [Route("")]
         [Route("Home")]
@@ -57,6 +58,21 @@ namespace MvcRoutingDemo.Controllers
             return ControllerContext.MyDisplayRouteInfo();
         }
 
+        public IActionResult About()
+        {
+            return ControllerContext.MyDisplayRouteInfo();
+        }
+        */
+        /*
+        [Route("")]
+        [Route("Index")]
+        [Route("/")]
+        public IActionResult Index()
+        {
+            return ControllerContext.MyDisplayRouteInfo();
+        }
+
+        [Route("About")]
         public IActionResult About()
         {
             return ControllerContext.MyDisplayRouteInfo();

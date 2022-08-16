@@ -3,6 +3,8 @@ using Microsoft.Docs.Samples;
 
 namespace AttributeRoutingWebApiDemo.Controllers
 {
+    //Combining attribute routes
+
     [ApiController]
     [Route("products")]
     public class ProductsApiController : ControllerBase

@@ -4,6 +4,8 @@ using Microsoft.Docs.Samples;
 
 namespace AttributeRoutingWebApiDemo.Controllers
 {
+    //Attribute routing with Http verb attributes
+
     [Route("api/[controller]")]
     [ApiController]
     public class Test2Controller : ControllerBase

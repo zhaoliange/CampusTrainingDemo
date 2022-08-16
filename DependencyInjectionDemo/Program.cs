@@ -2,6 +2,7 @@ using DependencyInjectionDemo;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
+//builder.Services.AddMyDependencyGroup();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IMyDependency, MyDependency>();
 //builder.Services.AddScoped<IMyDependency, MyDependency2>();

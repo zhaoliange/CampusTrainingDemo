@@ -5,6 +5,9 @@ using Microsoft.Docs.Samples;
 
 namespace MvcRoutingDemo.Controllers
 {
+    // Attribute routing
+
+    //[Route("[controller]/[action]")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -13,7 +16,7 @@ namespace MvcRoutingDemo.Controllers
         {
             _logger = logger;
         }
-
+        
         [Route("")]
         [Route("Home")]
         [Route("Home/Index")]
@@ -29,7 +32,36 @@ namespace MvcRoutingDemo.Controllers
         {
             return ControllerContext.MyDisplayRouteInfo(id);
         }
+        
+        /*
+        [Route("")]
+        [Route("Home")]
+        [Route("[controller]/[action]")]
+        public IActionResult Index()
+        {
+            return ControllerContext.MyDisplayRouteInfo();
+        }
 
+        [Route("[controller]/[action]")]
+        public IActionResult About()
+        {
+            return ControllerContext.MyDisplayRouteInfo();
+        }
+        */
+        /*
+        [Route("~/")]
+        [Route("/Home")]
+        [Route("~/Home/Index")]
+        public IActionResult Index()
+        {
+            return ControllerContext.MyDisplayRouteInfo();
+        }
+
+        public IActionResult About()
+        {
+            return ControllerContext.MyDisplayRouteInfo();
+        }
+        */
         public IActionResult Privacy()
         {
             return View();
